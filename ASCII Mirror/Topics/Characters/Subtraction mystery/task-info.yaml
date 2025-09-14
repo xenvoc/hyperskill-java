@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: '''P'''
+  - text: '''p'''
+  - text: 112
+  - text: Nothing because there is a compile error
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2688#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: static
+  - text: default
+  - text: protected
+  - text: final
+  - text: abstract
+  - text: public
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/1953#comment
+status: Solved
+record: -1
+local_check: false

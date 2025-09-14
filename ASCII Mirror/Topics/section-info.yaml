@@ -1,0 +1,53 @@
+content:
+  - Writing first program
+  - Printing data
+  - Reading user's input with Scanner
+  - Coding style conventions
+  - Naming variables
+  - Integer types and operations
+  - One-line condition with ternary operator
+  - Comments
+  - Calling methods
+  - For-loop
+  - Declaring methods
+  - Type casting
+  - Types and variables
+  - Functional decomposition
+  - Overloading
+  - Primitive and reference types
+  - Array
+  - Arrays as parameters
+  - Comparing values. Relational operators
+  - Characters
+  - String
+  - Constants. Final variables
+  - Floating-point types
+  - Iterating over arrays
+  - Defining classes
+  - Grouping classes with packages
+  - Instance methods
+  - Initializing new instances. Constructor
+  - Getters and setters
+  - Inheritance
+  - Multiple constructors
+  - Object class
+  - Objects and their properties
+  - Static members
+  - Adding annotations
+  - Method overriding
+  - Conditional statement
+  - Polymorphism
+  - Declaring functionality with interfaces
+  - Anonymous class
+  - Default methods
+  - Random class
+  - Abstract class
+  - Errors in programs
+  - First glance at exceptions
+  - Hierarchy of exceptions
+  - Exception handling
+  - NullPointerException
+  - Retrieving Class instances
+  - LocalDate
+  - Runtime type checking
+  - Sealed classes and interfaces

@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Yes, the sealed class shouldn't be public"
+  - text: "No, everything is fine"
+  - text: "Yes, there is no case label for a Square class inside the printShapeType\
+    \ (Shape shape) method."
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/19714#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "long max = first &gt; second ? second : first;"
+  - text: "long max = first : second ? first &gt; second;"
+  - text: "long max = first &gt; second !? first : second;"
+  - text: "long max = first &lt; second ? second : first;"
+  - text: "long max = first &gt; second ? first : second;"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/1981#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: It can't be compiled because nested ternary operators are forbidden.
+  - text: It finds min of three numbers.
+  - text: If a &gt; b it finds max of three numbers else min of them.
+  - text: It finds max of three numbers.
+  - text: If a &gt; b it finds min of three numbers else max of them.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2666#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,9 @@
+custom_name: "Basic literals: numbers, strings and characters"
+content:
+  - Theory
+  - Match groups and literals
+  - A valid string
+  - Printing order
+  - Save the day
+  - Non string literals
+  - Apple supply

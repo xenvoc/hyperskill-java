@@ -1,0 +1,19 @@
+<div class="step-text">
+<p>Will you face an issue in this code?</p>
+<pre><code class="language-java">public abstract sealed class Shape permits Triangle, Square {
+    public static void main(String[] args) {
+        Triangle triangle = new Triangle();
+
+        System.out.println(printShapeType(triangle)); 
+    }
+
+    public static String printShapeType(Shape shape) {
+        return switch (shape) {
+            case Triangle t -&gt; "The shape is a triangle";
+        };
+    }
+}
+
+final class Triangle extends Shape { }
+final class Square extends Shape { }</code></pre>
+</div>

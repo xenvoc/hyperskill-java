@@ -1,0 +1,13 @@
+content:
+  - Theory
+  - Overview the hierarchy
+  - Base classes of RuntimeException
+  - Base class
+  - Catching specific and general exceptions
+  - Checked exceptions
+  - Subclasses of Exception
+  - BadRequestException
+  - Sorting the crash  Whose fault is it
+  - Unchecked exceptions
+  - Subclasses of RuntimeException
+  - UncheckedException

@@ -1,0 +1,9 @@
+type: unsupported
+custom_name: "Thermostatic tales: The Goldilocks zone"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/49063#comment
+status: Unchecked
+record: -1

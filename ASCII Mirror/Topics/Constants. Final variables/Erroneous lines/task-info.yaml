@@ -1,0 +1,14 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: COUNT_OF_APPLES = 30;
+  - text: System.out.println(COUNT_OF_APPLES);
+  - text: COUNT_OF_APPLES = 40;<br>COUNT_OF_APPLES += 10;
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7430#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,40 @@
+package asciimirror;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainNonWorkingVersion {
+    public static void main(String[] args) {
+        ArrayList<String> fileContents = new ArrayList<String>();
+        int longestLine = -1;
+
+        Scanner scanneris = new Scanner(System.in);
+        System.out.println("Input the file path:");
+        String userInput = scanneris.nextLine();
+        File file = new File(userInput);
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNext()) {
+                String currLine = scanner.nextLine();
+                fileContents.add(currLine);
+                if (longestLine < currLine.length()) longestLine = currLine.length();
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+        }
+
+        // pad the strings:
+        for (int i = 0; i < fileContents.size(); i++) {
+            fileContents.set(i, String.format("%" + longestLine + "s", fileContents.get(i)));
+        }
+
+        // print:
+        for (String currLine : fileContents) {
+            System.out.println(currLine + " | " + currLine);
+        }
+
+
+
+    }
+}

@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: This is a lie — the code does not work at all!
+  - text: The final keyword allows changing the value of a variable once.
+  - text: The final keyword does not work with reference variables.
+  - text: "The final keyword makes a constant reference, but does not prohibit changing\
+    \ the internal state of the object."
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7431#comment
+status: Solved
+record: -1
+custom_name: Why does the code work?
+local_check: false

@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: To declare it with the const keyword.
+  - text: To declare it with the final keyword.
+  - text: To assign a special value to it.
+  - text: To write its name in the uppercase.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7428#comment
+status: Solved
+record: -1
+local_check: false

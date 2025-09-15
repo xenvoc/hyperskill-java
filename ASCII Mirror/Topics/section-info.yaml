@@ -51,3 +51,4 @@ content:
   - LocalDate
   - Runtime type checking
   - Sealed classes and interfaces
+  - Combining constants with enum

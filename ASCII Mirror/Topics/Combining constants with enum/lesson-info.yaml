@@ -4,3 +4,4 @@ content:
   - Currencies
   - Reasons to use enum
   - Days of week
+  - Enum weekday from integer input

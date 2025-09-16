@@ -13,5 +13,4 @@ public class Main {
 
 enum Weekday {
     // Define the enum constants here
-    MONDAY, TUESDAY, WEDNESDAY, THURDSAY, FRIDAY, SATURDAY, SUNDAY
 }

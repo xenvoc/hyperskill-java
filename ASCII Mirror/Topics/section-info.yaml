@@ -52,3 +52,4 @@ content:
   - Runtime type checking
   - Sealed classes and interfaces
   - Combining constants with enum
+  - Switch expression

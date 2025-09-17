@@ -3,23 +3,23 @@ hyperskill_project:
   ide_files: https://hyperskill.org/api/projects/260/additional-files/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Tue, 16 Sep 2025 11:36:29 UTC"
+update_date: "Wed, 17 Sep 2025 13:42:55 UTC"
 stages:
   - id: 1316
     step: 20315
-    is_completed: true
+    is_completed: false
   - id: 1317
     step: 20316
-    is_completed: true
+    is_completed: false
   - id: 1318
     step: 20317
-    is_completed: true
+    is_completed: false
   - id: 1319
     step: 20318
-    is_completed: true
+    is_completed: false
   - id: 1320
     step: 20319
-    is_completed: true
+    is_completed: false
 topics:
   0:
     - title: Introduction to Java
@@ -52,14 +52,14 @@ topics:
     - title: String
       theory_id: 3523
   2:
-    - title: "Write, compile, and run"
-      theory_id: 3739
-    - title: "Basic terms: JVM, JRE, JDK"
-      theory_id: 3499
     - title: Operating systems
       theory_id: 9704
     - title: Command line overview
       theory_id: 8977
+    - title: "Write, compile, and run"
+      theory_id: 3739
+    - title: "Basic terms: JVM, JRE, JDK"
+      theory_id: 3499
     - title: Parameters and options
       theory_id: 9746
     - title: Compile and run Java from CLI
@@ -104,6 +104,8 @@ topics:
       theory_id: 3594
     - title: Overloading
       theory_id: 3525
+    - title: Introduction to Linux
+      theory_id: 9526
     - title: Constants. Final variables
       theory_id: 7427
     - title: Errors in programs
@@ -116,6 +118,8 @@ topics:
       theory_id: 3570
     - title: Exception handling
       theory_id: 3552
+    - title: Environment variables
+      theory_id: 21817
     - title: File class
       theory_id: 3635
     - title: Reading files

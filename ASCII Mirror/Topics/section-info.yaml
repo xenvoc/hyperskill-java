@@ -54,3 +54,4 @@ content:
   - Combining constants with enum
   - Switch expression
   - Switch pattern matching
+  - File class

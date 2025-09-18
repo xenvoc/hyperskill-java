@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: The application will not compile.
+  - text: The application will run but throw a NullPointerException.
+  - text: The application will print the "No Match!" message.
+  - text: The application will print the "null case" message.
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18889#comment
+status: Solved
+record: -1
+local_check: false

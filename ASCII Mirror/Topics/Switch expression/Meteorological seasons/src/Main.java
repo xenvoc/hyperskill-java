@@ -9,13 +9,7 @@ class Main {
         Seasons season = Seasons.valueOf(scanner.nextLine());
 
         // write your code here
-        int temperature = switch (season) {
-            case SPRING, AUTUMN -> 20;
-            case SUMMER -> 37;
-            case WINTER -> 1;
-            default -> throw new IllegalStateException("Invalid name of Seasons.");
 
-        };
         System.out.println(temperature);
     }
 }

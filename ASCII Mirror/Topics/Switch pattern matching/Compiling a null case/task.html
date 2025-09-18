@@ -1,0 +1,18 @@
+<div class="step-text">
+<p>What is the result of executing the following code using the new features?</p>
+<pre><code class="language-java">public class SwitchPatternMatchingDemo {
+    public static void main(String[] args) {
+        String str = null;
+        nullDemo(str);
+    }
+
+    static void nullDemo(String s) {
+        switch (s) {
+            case null    -&gt; System.out.println("null case");
+            case "Hello" -&gt; System.out.println("Hello");
+            case "Hi"    -&gt; System.out.println("Hi");
+            default      -&gt; System.out.println("No Match!");
+        }
+    }
+}</code></pre>
+</div>

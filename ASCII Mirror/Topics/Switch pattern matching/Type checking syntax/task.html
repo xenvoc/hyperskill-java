@@ -1,0 +1,17 @@
+<div class="step-text">
+<p>What is the output of this application? Write the whole output line without quotation marks.</p>
+<pre><code class="language-java">public class SwitchPatternMatchingDemo {
+    public static void main(String[] args) {
+        Object obj = "-100";
+        switchTypeCheckingDemo(obj);
+    }
+
+    static void switchTypeCheckingDemo(Object o) {
+        switch (o) {
+            case Integer i &amp;&amp; i == -100 -&gt; System.out.printf("int: %d, the value is negative", i);
+            case String s &amp;&amp; s.equals("-100") -&gt; System.out.printf("String: %s, the value is negative", s);
+            default -&gt; System.out.println("No Match!");
+        }
+    }
+}</code></pre>
+</div>

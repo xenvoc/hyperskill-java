@@ -3,23 +3,23 @@ hyperskill_project:
   ide_files: https://hyperskill.org/api/projects/260/additional-files/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Thu, 18 Sep 2025 12:57:31 UTC"
+update_date: "Fri, 19 Sep 2025 12:18:35 UTC"
 stages:
   - id: 1316
     step: 20315
-    is_completed: true
+    is_completed: false
   - id: 1317
     step: 20316
-    is_completed: true
+    is_completed: false
   - id: 1318
     step: 20317
-    is_completed: true
+    is_completed: false
   - id: 1319
     step: 20318
-    is_completed: true
+    is_completed: false
   - id: 1320
     step: 20319
-    is_completed: true
+    is_completed: false
 topics:
   0:
     - title: Introduction to Java

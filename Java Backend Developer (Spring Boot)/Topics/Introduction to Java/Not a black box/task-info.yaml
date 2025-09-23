@@ -4,22 +4,14 @@ captions:
   - "public static void main(String[] args)"
   - "System.out.println(&quot;Hello, World!&quot;);"
 options:
+  - This is where execution begins.
+  - We&#x27;re telling Java to create a new public class.  All of your code will be
+    inside classes.
   - "These are our program&#x27;s first words! This command instructs Java to print\
   \ &quot;Hello, World!&quot;."
-  - This is where execution begins. It&#x27;s the heart of our program.
-  - We&#x27;re telling Java to create a new public class. This is like the birth certificate
-    of our program.
 files:
   - name: src/Task.java
     visible: true
-    text: |
-      // You can experiment here, it won’t be checked
-      
-      public class Task {
-        public static void main(String[] args) {
-          // put your code here
-        }
-      }
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/38629#comment
 status: Solved

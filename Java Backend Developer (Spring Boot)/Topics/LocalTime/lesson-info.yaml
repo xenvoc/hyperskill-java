@@ -5,3 +5,4 @@ content:
   - Get hour
   - Some hours and minutes ago
   - Millisecond precision
+  - Seconds between two time points

@@ -3,3 +3,4 @@ content:
   - "Basic literals  numbers, strings and characters"
   - Inner classes
   - LocalTime
+  - LocalDateTime

@@ -1,3 +1,5 @@
 content:
   - Theory
   - Merging date-time instances
+  - Subtracting hours and adding minutes
+  - Methods of LocalDateTime

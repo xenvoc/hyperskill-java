@@ -5,4 +5,3 @@ content:
   - Methods of LocalDateTime
   - Add 11 hours and print the date
   - The passed hours since the beginning of year
-  - Whole hours between two date-time pairs

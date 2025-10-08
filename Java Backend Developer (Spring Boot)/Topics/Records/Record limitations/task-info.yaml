@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Records can't be annotated
+  - text: Records can't extend another class
+  - text: Records can't be generic
+  - text: Records can implement interfaces
+  - text: Records are immutable
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18330#comment
+status: Solved
+record: -1
+local_check: false

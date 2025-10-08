@@ -6,8 +6,8 @@ record Home(String address, String city, String state, String zipCode) {
         this.address = address.toUpperCase(Locale.ENGLISH);
         this.city = city.toUpperCase(Locale.ENGLISH);
         this.state = state.toUpperCase(Locale.ENGLISH);
-        if (zipCode == null) this.zipCode = "unknown";
-        else this.zipCode = zipCode;
+        this.zipCode = zipCode;
+        if (zipCode == null) zipCode = null;
     }
 
 

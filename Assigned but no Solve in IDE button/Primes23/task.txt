@@ -1,0 +1,1 @@
+find the greatest prime number that is smaller than 295.

@@ -1,11 +1,5 @@
 type: choice
-is_multiple_choice: true
-options:
-  - text: To help hiding static members inside the inner classes
-  - text: To organise your code
-  - text: Only an inner class provides access to protected fields and methods of an
-      outer class
-  - text: To increase encapsulation
+is_multiple_choice: false
 files:
   - name: src/Task.java
     visible: true

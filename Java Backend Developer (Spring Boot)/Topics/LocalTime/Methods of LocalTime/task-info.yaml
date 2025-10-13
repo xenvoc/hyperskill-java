@@ -1,13 +1,5 @@
 type: choice
-is_multiple_choice: true
-options:
-  - text: The class has no methods for obtaining nanoseconds of an instance
-  - text: "The invocation <b>LocalTime.parse(\"11:59:50\")</b> creates an instance that\
-    \ represents 11 hours, 50 minutes, 59 seconds"
-  - text: The invocation <b>LocalTime.ofSecondOfDay(3600)</b> creates an instance that
-      represents 01:00
-  - text: The class has instance methods for adding and subtracting seconds
-  - text: The method <b>withSecond</b> creates a new instance
+is_multiple_choice: false
 files:
   - name: src/Task.java
     visible: true

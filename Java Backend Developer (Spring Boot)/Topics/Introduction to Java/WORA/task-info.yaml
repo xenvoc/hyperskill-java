@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+  - text: Write Once Read Anywhere
+  - text: Write Once Run Anywhere
+  - text: When Online RPGs Attack
+  - text: Write Onetime Run Anytime
 files:
   - name: src/Task.java
     visible: true

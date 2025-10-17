@@ -1,4 +1,8 @@
 type: sorting
+options:
+  - Print a character
+  - Print an integer
+  - Print a string
 files:
   - name: src/Task.java
     visible: true
@@ -6,3 +10,7 @@ files:
 feedback_link: https://hyperskill.org/learn/step/39423#comment
 status: Solved
 record: -1
+ordering:
+  - 0
+  - 1
+  - 2

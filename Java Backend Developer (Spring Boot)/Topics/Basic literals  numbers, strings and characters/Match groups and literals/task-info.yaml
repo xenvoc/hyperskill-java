@@ -1,4 +1,14 @@
 type: matching
+captions:
+  - String
+  - Number
+  - Character
+  - Invalid literal
+options:
+  - '''text'''
+  - 100_000_000
+  - '"464531######0207"'
+  - '''H'''
 files:
   - name: src/Task.java
     visible: true
@@ -6,3 +16,8 @@ files:
 feedback_link: https://hyperskill.org/learn/step/3224#comment
 status: Solved
 record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

@@ -1,5 +1,12 @@
 type: choice
-is_multiple_choice: false
+is_multiple_choice: true
+options:
+  - text: 7000
+  - text: '"3"'
+  - text: '''a'''
+  - text: '"7000"'
+  - text: '''3'''
+  - text: '"0000"'
 files:
   - name: src/Task.java
     visible: true

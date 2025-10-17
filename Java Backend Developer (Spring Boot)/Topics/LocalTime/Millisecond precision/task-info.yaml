@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+  - text: LocalTime.ofNanoOfDay(millis * 1000000)
+  - text: LocalTime.ofSecondOfDay(millis / 1000)
+  - text: LocalTime.ofNanoOfDay(millis / 1000000)
+  - text: LocalTime.ofSecondOfDay(millis * 1000)
 files:
   - name: src/Task.java
     visible: true

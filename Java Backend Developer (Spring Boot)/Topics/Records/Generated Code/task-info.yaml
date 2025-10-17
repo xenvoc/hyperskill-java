@@ -1,5 +1,10 @@
 type: choice
-is_multiple_choice: false
+is_multiple_choice: true
+options:
+  - text: "record class Home(String address){}"
+  - text: "record Home {}"
+  - text: "record Home(){}"
+  - text: "record Home(String address){}"
 files:
   - name: src/Task.java
     visible: true

@@ -1,5 +1,10 @@
 type: choice
 is_multiple_choice: false
+options:
+  - text: 1 version
+  - text: 2 versions
+  - text: 3 versions
+  - text: It depends on the Java version
 files:
   - name: src/Task.java
     visible: true

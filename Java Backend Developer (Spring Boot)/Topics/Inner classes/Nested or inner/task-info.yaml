@@ -1,5 +1,9 @@
 type: choice
 is_multiple_choice: false
+options:
+  - text: Nested classes include inner classes
+  - text: These terms are synonymous
+  - text: Inner classes include nested classes
 files:
   - name: src/Task.java
     visible: true

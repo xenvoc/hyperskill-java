@@ -6,3 +6,4 @@ content:
   - LocalDateTime
   - Records
   - Formatted output
+  - Processing strings

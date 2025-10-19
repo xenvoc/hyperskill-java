@@ -6,6 +6,5 @@ public class Main {
         double pi = Math.PI;
         //write your code below
         System.out.printf("%.3f", pi);
-
     }
 }

@@ -6,7 +6,7 @@ captions:
   - Invalid literal
 options:
   - '''text'''
-  - 100_000_000
+  - 100000000
   - '"464531######0207"'
   - '''H'''
 files:

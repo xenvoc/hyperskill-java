@@ -9,3 +9,7 @@ content:
   - Processing strings
   - Command-line arguments
   - Optional
+  - Anonymous classes properties
+  - Comparing dates and time
+  - BigInteger
+  - BigDecimal

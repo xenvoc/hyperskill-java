@@ -16,6 +16,6 @@ public class HelloController {
 
     @GetMapping("/about")
     public String about() {
-        return "Website for Spring Boot testing"
+        return "Website for Spring Boot testing";
     }
 }

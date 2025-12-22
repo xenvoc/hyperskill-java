@@ -1,6 +1,7 @@
 package org.hyperskill.demo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,5 +30,10 @@ public class HelloController {
             minutes = 15;
         else minutes = 35;
         return "Cook " + item + " for " + minutes + " minutes.";
+    }
+
+    @GetMapping("/dish/{id}")
+    public String getDish(@PathVariable int id) {
+        return "Dish " + id + ", serve with " + id*4 + " potatoes!";
     }
 }

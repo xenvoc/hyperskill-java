@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 @SpringBootApplication
 public class CliExampleApplication {
-    @AutoWired
+    @Autowired
     private CalculatorService calculatorService;
 
 	public static void main(String[] args) {
@@ -26,6 +26,7 @@ public class CliExampleApplication {
             String input = scanner.nextLine();
             String[] numbersStr = input.split(" ");
             int[] numbers = new int[numbersStr.length];
+
             for (int i = 0; i < numbersStr.length; i++) {
                 try {
                     numbers[i] = Integer.parseInt(numbersStr[i]);
@@ -33,6 +34,7 @@ public class CliExampleApplication {
                     System.out.println("Invalid number: " + numbersStr[i]);
                 }
             }
+
             int sum = calculatorService.sum(numbers);
             System.out.println("The sum of the numbers is: " + sum);
         };

@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.bean.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
 
 
 import java.util.Scanner;

@@ -6,9 +6,5 @@ files:
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/4709#comment
 status: Solved
-feedback:
-  message: "<html>Passed. \nHello, Jake!\nCongratulations! It is your first Java program\
-    \ that really works.</html>"
-  time: "Wed, 29 May 2024 12:09:39 UTC"
 record: -1
 submission_language: java17

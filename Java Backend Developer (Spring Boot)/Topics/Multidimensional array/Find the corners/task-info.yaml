@@ -1,11 +1,13 @@
 type: code
-custom_name: Boxes are not just objects!
 files:
   - name: src/Main.java
     visible: true
     highlight_level: NONE
     learner_created: false
-feedback_link: https://hyperskill.org/learn/step/2598#comment
+feedback_link: https://hyperskill.org/learn/step/12443#comment
 status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Wed, 31 Dec 2025 14:07:21 UTC"
 record: -1
 submission_language: java17

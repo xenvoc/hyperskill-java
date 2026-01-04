@@ -12,14 +12,15 @@ class Main {
             }
         }
         boolean symmetric = true;
-        int rev = -1;
-        for (int i = 0; i < n / 2; i++) {
-            rev = n - 1 - i;
-            if (matrix[i][i] != matrix[rev][rev]) {
-                symmetric = false;
-                break;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (matrix[i][j] != matrix[j][i]) {
+                    symmetric = false;
+                    break;
+                }
             }
         }
+
         if (symmetric) System.out.println("YES");
         else System.out.println("NO");
     }

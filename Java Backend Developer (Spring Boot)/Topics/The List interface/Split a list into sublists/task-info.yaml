@@ -1,0 +1,22 @@
+type: code
+files:
+  - name: src/Main.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2329#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:8: error: package com.google.common.collect does not exist
+    import com.google.common.collect.Lists;
+                                    ^
+    Main.java:19: error: cannot find symbol
+            sublists = Lists.partition(list, subListSize);
+                       ^
+      symbol:   variable Lists
+      location: class ListUtils
+    2 errors
+  time: "Wed, 14 Jan 2026 16:46:20 UTC"
+record: -1
+submission_language: java17

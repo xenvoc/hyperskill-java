@@ -5,29 +5,26 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import com.google.common.collect.Lists;
+// import com.google.common.collect.Lists;
 
 class ListUtils {
 
     /**
      * It splits the passed list into a sequence of sublists with a predefined size 
      */
-    public static <T> List<List<T>> splitListIntoSubLists(List<T> list, int subListSize) {
+     public static <T> List<List<T>> splitListIntoSubLists(List<T> list, int subListSize) {
         List<List<T>> sublists = new ArrayList<>();
 
         // write your code here
-        sublists = Lists.partition(list, subListSize);
-        // int subListCount = (list.size() + subListSize - 1) / subListSize;
-        // for (int i = 0; i < subListCount - 1; i++) {
-        //     for (int j = 0; j < subListSize; j++) {
-        //
-        //     }
-
-        // }
-        // for (int i = (subListCount - 1) * subList  Size; i < list.size(); i++) {
-
-        // }
-
+         int i = 0;
+         do {
+             List<T> sublist = new ArrayList<>();
+             for (int j = 0; j < subListSize && j+i < list.size(); j++) {
+                 sublist.add(list.get(i+j));
+             }
+             sublists.add(sublist);
+             i += subListSize;
+         } while (i < list.size());
         return sublists;
     }
 }

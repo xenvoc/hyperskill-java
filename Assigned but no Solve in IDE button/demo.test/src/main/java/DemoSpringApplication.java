@@ -1,3 +1,5 @@
+import com.example.dot.demo.test.Customer;
+
 @SpringBootApplication
 public class DemoSpringApplication {
 

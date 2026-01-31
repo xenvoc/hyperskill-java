@@ -1,3 +1,5 @@
+package com.example.dot.demo.test;
+
 @Configuration
 public class Addresses {
     @Bean

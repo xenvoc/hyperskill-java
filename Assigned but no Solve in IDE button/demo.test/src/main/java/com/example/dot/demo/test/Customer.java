@@ -1,3 +1,5 @@
+package com.example.dot.demo.test;
+
 class Customer {
     private final String name;
     private final String address;
@@ -10,7 +12,7 @@ class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "com.example.dot.demo.test.Customer{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 '}';

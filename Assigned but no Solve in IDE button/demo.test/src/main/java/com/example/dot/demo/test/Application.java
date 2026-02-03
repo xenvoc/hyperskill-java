@@ -17,5 +17,11 @@ public class Application {
         return new Customer("Claire WitPro", address);
     }
 
+   @Bean
+   public Customer temporary(@Autowired Customer customer) {
+        System.out.println(customer);
+        return customer;
+   }
+
 
 }

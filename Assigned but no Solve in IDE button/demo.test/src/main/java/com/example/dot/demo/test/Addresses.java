@@ -5,7 +5,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Addresses {
     @Bean
-    public String address() {
-        return "Yellow Street, 103";
+    public String address1() {
+        return "Green Street, 102";
+    }
+
+    @Bean
+    public String address2() {
+        return "Apple Street, 15";
     }
 }

@@ -13,8 +13,8 @@ public class Application {
 	}
 
     @Bean
-    public Customer customer(@Autowired String address) {
-        return new Customer("Claire WitPro", address);
+    public Customer customer(String address) {
+        return new Customer("Clair de Lune", address);
     }
 
    @Bean
@@ -22,6 +22,7 @@ public class Application {
         System.out.println(customer);
         return customer;
    }
+
 
 
 }

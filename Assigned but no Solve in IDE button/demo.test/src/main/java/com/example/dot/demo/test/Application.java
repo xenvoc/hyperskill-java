@@ -1,6 +1,7 @@
 package com.example.dot.demo.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +14,7 @@ public class Application {
 	}
 
     @Bean
-    public Customer customer(String address) {
+    public Customer customer(@Qualifier("address2") String address) {
         return new Customer("Clair de Lune", address);
     }
 

@@ -1,3 +1,5 @@
+package com.setup.gettingDataFromRest.models;
+
 public class Task {
     private int id;
     private String name;

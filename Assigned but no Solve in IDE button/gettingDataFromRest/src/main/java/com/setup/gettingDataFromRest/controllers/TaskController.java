@@ -1,3 +1,5 @@
+package com.setup.gettingDataFromRest.controllers;
+
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.bind.annotation.RestController;

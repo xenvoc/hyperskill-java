@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 
 public class TaskController {
-
-    @GetMapping("/test")
-    public int returnOne() {
-        return 1;
-    }
+    private final List<Task> tasklist = List.of(
+            new Task(1, "task1", "A first test task", false),
+            new Task(2, "task2", "A second test task", true)
+    );
 
 }

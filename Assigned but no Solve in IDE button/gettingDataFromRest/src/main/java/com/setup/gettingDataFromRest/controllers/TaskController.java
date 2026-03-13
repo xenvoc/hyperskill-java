@@ -13,4 +13,9 @@ public class TaskController {
             new Task(2, "task2", "A second test task", true)
     );
 
+    @GetMapping("/tasks")
+    public List<Task> getTasks() {
+        return taskList;
+    }
+
 }

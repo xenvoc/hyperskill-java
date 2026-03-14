@@ -13,9 +13,9 @@ public class TaskController {
             new Task(2, "task2", "A second test task", true)
     );
 
-    @GetMapping("/tasks")
-    public List<Task> getTasks() {
-        return taskList;
+    @GetMapping("/tasks/{id]")
+    public Task getTask(@PathVariable int id) {
+        return taskList.get(id - 1); // list indices start from 0
     }
 
 }

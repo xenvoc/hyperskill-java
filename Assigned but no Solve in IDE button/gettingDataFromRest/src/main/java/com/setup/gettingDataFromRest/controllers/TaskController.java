@@ -1,21 +1,26 @@
 package com.setup.gettingDataFromRest.controllers;
 
+import com.setup.gettingDataFromRest.models.Task;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.List;
+
 @RestController
 
 public class TaskController {
-    private final List<Task> tasklist = List.of(
+    private final List<Task> taskList = List.of(
             new Task(1, "task1", "A first test task", false),
             new Task(2, "task2", "A second test task", true)
     );
 
-    @GetMapping("/tasks/{id]")
-    public Task getTask(@PathVariable int id) {
-        return taskList.get(id - 1); // list indices start from 0
+    @GetMapping("/tasks/{id}")
+    public ResponseEntity<Task> getTasks(@PathVariable int id) {
+        return new ResponseEntity<>(taskList.get(id - 1), HttpStatus.ACCEPTED);
     }
 
 }

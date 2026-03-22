@@ -1,5 +1,9 @@
 package com.wrong.Request.controller;
 
+import com.wrong.Request.model.Product;
+
+import java.util.List;
+
 public class ProductController {
     private final List<Product> productList = List.of(
             new Product(1, "Milk"),

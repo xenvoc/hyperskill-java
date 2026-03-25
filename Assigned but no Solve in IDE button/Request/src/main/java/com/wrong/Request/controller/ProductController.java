@@ -1,6 +1,8 @@
 package com.wrong.Request.controller;
 
 import com.wrong.Request.model.Product;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 

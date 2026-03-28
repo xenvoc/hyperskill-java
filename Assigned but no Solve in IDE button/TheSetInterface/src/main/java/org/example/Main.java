@@ -8,5 +8,9 @@ public class Main {
         Set<String> people = Set.of("Larry", "Kenny", "Sabrina");
         Set<Integer> numbers = Set.of(100, 200, 300, 400);
 
+        System.out.println(emptySet);
+        System.out.println(people);
+        System.out.println(numbers);
+
     }
 }

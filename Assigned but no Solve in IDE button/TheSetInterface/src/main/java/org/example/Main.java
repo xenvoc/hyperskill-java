@@ -12,5 +12,10 @@ public class Main {
         System.out.println(people);
         System.out.println(numbers);
 
+        System.out.println(emptySet.contains("hello"));
+        System.out.println(people.contains("Sabrina"));
+        System.out.println(people.contains("John"));
+        System.out.println(numbers.contains(300));
+
     }
 }

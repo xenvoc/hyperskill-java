@@ -17,5 +17,16 @@ public class Main {
         System.out.println(people.contains("John"));
         System.out.println(numbers.contains(300));
 
+        Set<String> countries = new HashSet<>();
+
+        countries.add("India");
+        countries.add("Japan");
+        countries.add("Switzerland");
+        countries.add("Japan");
+        countries.add("Brazil");
+
+        System.out.println(countries);
+        System.out.println(countries.contains("Switzerland"));
+
     }
 }

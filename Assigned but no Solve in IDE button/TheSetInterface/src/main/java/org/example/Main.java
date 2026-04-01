@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -48,6 +45,14 @@ public class Main {
 
         System.out.println(sortedSet.first());
         System.out.println(sortedSet.last());
+
+        Set<Character> characters = new LinkedHashSet<>();
+
+        for (char c = 'a'; c <= 'k'; c++) {
+            characters.add(c);
+        }
+
+        System.out.println(characters);
 
 
 

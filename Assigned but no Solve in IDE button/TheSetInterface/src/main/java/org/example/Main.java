@@ -54,6 +54,17 @@ public class Main {
 
         System.out.println(characters);
 
+        Set<String> countries2 = new HashSet<>(List.of("India", "Japan", "Switzerland"));
+
+        countries2.addAll(List.of("India", "Germany", "Algeria"));
+        System.out.println(countries2);
+
+        countries2.retainAll(List.of("Italy", "Japan", "India", "Germany"));
+        System.out.println(countries2);
+
+        countries2.removeAll(List.of("Japan", "Germany", "USA"));
+        System.out.println(countries2);
+
 
 
     }

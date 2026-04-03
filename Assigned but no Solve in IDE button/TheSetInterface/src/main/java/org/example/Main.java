@@ -65,6 +65,12 @@ public class Main {
         countries2.removeAll(List.of("Japan", "Germany", "USA"));
         System.out.println(countries2);
 
+        Set<String> countries3 = new HashSet<>(List.of("India", "Japan", "Algeria"));
+
+        System.out.println(countries3.containsAll(Set.of()));
+        System.out.println(countries3.containsAll(Set.of("India", "Japan")));
+        System.out.println(countries3.containsAll(Set.of("India", "Germany")));
+        System.out.println(countries3.containsAll(Set.of("Algeria", "India", "Japan")));
 
 
     }

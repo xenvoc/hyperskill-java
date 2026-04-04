@@ -72,6 +72,19 @@ public class Main {
         System.out.println(countries3.containsAll(Set.of("India", "Germany")));
         System.out.println(countries3.containsAll(Set.of("Algeria", "India", "Japan")));
 
+        Objects.equals(Set.of(1, 2, 3), Set.of(1, 3));
+        System.out.println("---");
+        Objects.equals(Set.of(1, 2, 3), Set.of(1, 2, 3));
+        Objects.equals(Set.of(1, 2, 3), Set.of(1, 3, 2));
+
+        Set<Integer> numbers2 = new HashSet<>();
+
+        numbers2.add(1);
+        numbers2.add(2);
+        numbers2.add(3);
+
+        Objects.equals(numbers2, Set.of(1, 2, 3));
+
 
     }
 }

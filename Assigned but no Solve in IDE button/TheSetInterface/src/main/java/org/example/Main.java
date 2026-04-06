@@ -73,7 +73,6 @@ public class Main {
         System.out.println(countries3.containsAll(Set.of("Algeria", "India", "Japan")));
 
         System.out.println(Objects.equals(Set.of(1, 2, 3), Set.of(1, 3)));
-        System.out.println("---");
         System.out.println(Objects.equals(Set.of(1, 2, 3), Set.of(1, 2, 3)));
         System.out.println(Objects.equals(Set.of(1, 2, 3), Set.of(1, 3, 2)));
 

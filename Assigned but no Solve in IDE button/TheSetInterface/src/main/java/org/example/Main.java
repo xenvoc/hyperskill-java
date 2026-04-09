@@ -84,6 +84,15 @@ public class Main {
 
         System.out.println(Objects.equals(numbers2, Set.of(1, 2, 3)));
 
+        HashSet<String> letters = new HashSet<>();
+        letters.add("A");
+        letters.add("B");
+        letters.add("A");
+        letters.add("C");
+        letters.add("B");
+
+        System.out.println(letters);
+
 
     }
 }

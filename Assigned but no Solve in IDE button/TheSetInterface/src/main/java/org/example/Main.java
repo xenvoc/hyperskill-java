@@ -93,6 +93,13 @@ public class Main {
 
         System.out.println(letters);
 
+        TreeSet<Integer> numbers3 = new TreeSet<>();
+        numbers3.add(1);
+        numbers3.add(3);
+        numbers3.add(1);
+        System.out.println(numbers3.contains(3));
+        System.out.println(numbers3.contains(8));
+
 
     }
 }

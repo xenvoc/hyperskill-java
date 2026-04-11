@@ -100,6 +100,12 @@ public class Main {
         System.out.println(numbers3.contains(3));
         System.out.println(numbers3.contains(8));
 
+        HashSet<Integer> numbers4 = new HashSet<>();
+        numbers4.add(1);
+        numbers4.add(4);
+        numbers4.add(1);
+        System.out.println(numbers4);
+
 
     }
 }

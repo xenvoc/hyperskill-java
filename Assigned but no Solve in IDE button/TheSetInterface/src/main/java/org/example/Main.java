@@ -106,6 +106,9 @@ public class Main {
         numbers4.add(1);
         System.out.println(numbers4);
 
+        numbers3.retainAll(numbers4);
+        System.out.println(numbers3);
+
 
     }
 }

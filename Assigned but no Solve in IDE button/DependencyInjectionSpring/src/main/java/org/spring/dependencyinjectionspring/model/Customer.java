@@ -5,6 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Customer {
-    @Autowired
     private Product product;
+
+    @Autowired
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 }

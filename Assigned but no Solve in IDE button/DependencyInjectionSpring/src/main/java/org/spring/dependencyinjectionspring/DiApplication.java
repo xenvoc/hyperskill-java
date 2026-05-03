@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class DiApplication {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(Config.class);
-        Car myBean = context.getBean(Car.class);)
+        Car myBean = context.getBean("tesla", Car.class);
         System.out.println(myBean.getName());
     }
 }

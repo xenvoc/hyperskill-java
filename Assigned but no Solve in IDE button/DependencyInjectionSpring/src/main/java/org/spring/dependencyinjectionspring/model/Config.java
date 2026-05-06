@@ -7,13 +7,12 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class Config {
 
-    @Bean
-    @Primary
+    @Bean("tesla")
     public Car teslaCar() {
         return new Car("Tesla", "2023");
     }
 
-    @Bean
+    @Bean("toyota")
     public Car toyotaCar() {
         return new Car("Toyota", "2023");
     }

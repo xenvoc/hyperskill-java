@@ -16,4 +16,14 @@ public class Config {
     public Car toyotaCar() {
         return new Car("Toyota", "2023");
     }
+
+    @Bean
+    public Engine teslaEngine() {
+        return new Engine("Tesla", true);
+    }
+
+    @Bean
+    public Engine toyotaEngine() {
+        return new Engine("Toyota", true);
+    }
 }

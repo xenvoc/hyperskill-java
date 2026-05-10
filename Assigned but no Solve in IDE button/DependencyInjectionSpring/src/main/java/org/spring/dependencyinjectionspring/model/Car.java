@@ -1,8 +1,13 @@
 package org.spring.dependencyinjectionspring.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Car {
     private String name;
     private String model;
+
+    @Autowired
+    private Engine engine;
 
     public Car(String name, String model) {
         this.name = name;

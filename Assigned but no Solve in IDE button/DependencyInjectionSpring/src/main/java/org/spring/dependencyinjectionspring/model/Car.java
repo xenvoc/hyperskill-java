@@ -1,11 +1,13 @@
 package org.spring.dependencyinjectionspring.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Car {
     private String name;
     private String model;
 
+    @Qualifier("teslaEngine")
     @Autowired
     private Engine engine;
 

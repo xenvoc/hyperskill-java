@@ -26,4 +26,12 @@ public class Car {
 
     public String getName() { return name; }
     public String getModel() { return model; }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 }

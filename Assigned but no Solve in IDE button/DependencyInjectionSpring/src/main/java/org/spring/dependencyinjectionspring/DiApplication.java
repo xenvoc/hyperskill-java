@@ -9,6 +9,6 @@ public class DiApplication {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(Config.class);
         Car myBean = context.getBean("tesla", Car.class);
-        System.out.println(myBean.getName());
+        System.out.println(myBean.getEngine().getBrand());
     }
 }

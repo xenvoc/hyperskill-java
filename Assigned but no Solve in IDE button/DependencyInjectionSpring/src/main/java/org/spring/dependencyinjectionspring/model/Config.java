@@ -1,5 +1,6 @@
 package org.spring.dependencyinjectionspring.model;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -25,5 +26,19 @@ public class Config {
     @Bean
     public Engine toyotaEngine() {
         return new Engine("Toyota", true);
+    }
+
+    @Bean
+    public EngineI dieselEngine() {
+        return new DieselEngine();
+    }
+
+    @Bean EngineI electricEngine() {
+        return new ElectricEngine;
+    }
+
+    @Bean
+    public Vehicle vehicle(@Qualifier("electricEngine") EngineI engine) {
+        return new Vehicle(engine);
     }
 }

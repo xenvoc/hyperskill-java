@@ -14,7 +14,7 @@ public class PasswordConfig {
         return new PasswordAlphabet(ALPHA + NUMERIC + SPECIAL_CHARS);
     }
 
-    static class PasswordAlphabet {
+    public static class PasswordAlphabet {
         private final String characters;
 
         public PasswordAlphabet(String characters) {

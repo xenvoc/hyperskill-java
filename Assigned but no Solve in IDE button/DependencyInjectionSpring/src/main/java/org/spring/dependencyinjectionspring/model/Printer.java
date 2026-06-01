@@ -13,6 +13,5 @@ public class Printer {
     }
 
     public void printHello() {
-        System.out.println(inkSupply.getMessage());
-    }
+        System.out.println(inkSupply.getMessage())    }
 }

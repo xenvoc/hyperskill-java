@@ -10,5 +10,6 @@ public class MyController {
     @ResponseBody
     public String helloWorld() {
         return "Hello, World!";
+    }
 
 }

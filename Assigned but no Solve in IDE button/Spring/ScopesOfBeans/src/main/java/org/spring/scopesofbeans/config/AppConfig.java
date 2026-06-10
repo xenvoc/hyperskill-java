@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Configuration
 public class AppConfig {
     @Bean
-    @Scope("singleton")
+    @Scope("prototype")
     public AtomicInteger createCounter() {
         return new AtomicInteger();
     }

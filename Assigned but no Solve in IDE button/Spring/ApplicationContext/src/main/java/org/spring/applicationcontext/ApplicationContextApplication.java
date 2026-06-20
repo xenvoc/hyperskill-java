@@ -13,7 +13,7 @@ public class ApplicationContextApplication {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(Config.class);
         System.out.println(Arrays.toString(context.getBeanDefinitionNames()));
-        SpringApplication.run(ApplicationContextApplication.class, args);
+        //SpringApplication.run(ApplicationContextApplication.class, args);
     }
 
 }

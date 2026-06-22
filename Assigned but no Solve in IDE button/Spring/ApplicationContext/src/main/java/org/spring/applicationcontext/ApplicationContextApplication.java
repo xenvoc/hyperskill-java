@@ -16,6 +16,8 @@ public class ApplicationContextApplication {
         System.out.println(Arrays.toString(context.getBeanDefinitionNames()));
         System.out.println(context.getBean(Person.class));
         //SpringApplication.run(ApplicationContextApplication.class, args);
+        System.out.println(context.getBean("personMay"));
+        System.out.println(context.getBean("personMay", Person.class));
     }
 
 }

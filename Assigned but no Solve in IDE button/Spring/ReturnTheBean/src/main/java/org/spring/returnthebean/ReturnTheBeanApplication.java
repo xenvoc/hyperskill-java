@@ -11,6 +11,7 @@ public class ReturnTheBeanApplication {
     public static void main(String[] args) {
         //SpringApplication.run(ReturnTheBeanApplication.class, args);
         var context = new AnnotationConfigApplicationContext(Config.class);
+        System.out.println(context.getBean("bean1"));
     }
 
 }

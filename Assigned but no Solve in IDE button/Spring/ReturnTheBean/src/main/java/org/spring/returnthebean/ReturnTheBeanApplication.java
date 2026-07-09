@@ -14,6 +14,7 @@ public class ReturnTheBeanApplication {
         System.out.println(context.getBean("bean1"));
         System.out.println(context.getBean("bean2", String.class));
         System.out.println(context.getBean(String.class));
+        System.out.println(context.getBean(int[].class));
     }
 
 }

@@ -13,8 +13,16 @@ public class ReturnTheBeanApplication {
         var context = new AnnotationConfigApplicationContext(Config.class);
         System.out.println(context.getBean("bean1"));
         System.out.println(context.getBean("bean2", String.class));
-        System.out.println(context.getBean(String.class));
+        //System.out.println(context.getBean(String.class));
         System.out.println(context.getBean(int[].class));
     }
 
 }
+
+
+/*
+String for beanie1
+String for beanie2
+// error
+[I@26d9b808
+ */

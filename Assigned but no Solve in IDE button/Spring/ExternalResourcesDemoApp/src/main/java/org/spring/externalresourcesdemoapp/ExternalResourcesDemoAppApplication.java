@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
 
-import java.sql.SQLOutput;
 
 @SpringBootApplication
 public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
@@ -20,7 +19,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        System.out.println("One dollar = " + environment.getProperty("yen") + " Yen");
+        System.out.println("One dollar = " + environment.getProperty("Yen") + " Yen");
         System.out.println("One dollar = " + environment.getProperty("EGP") + " EGP");
     }
 

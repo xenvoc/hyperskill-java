@@ -21,6 +21,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
     public void run(String... args) {
         System.out.println("One dollar = " + environment.getProperty("Yen") + " Yen");
         System.out.println("One dollar = " + environment.getProperty("EGP") + " EGP");
+        System.out.println(environment.getProperty("name"));
     }
 
 }

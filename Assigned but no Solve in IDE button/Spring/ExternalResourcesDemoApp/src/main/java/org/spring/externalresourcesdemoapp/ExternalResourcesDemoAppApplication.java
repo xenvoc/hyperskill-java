@@ -10,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @PropertySource("classpath:user.properties")
+@PropertySource("classpath:landmark.properties")
 public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
 
     @Autowired
@@ -24,6 +25,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
         System.out.println("One dollar = " + environment.getProperty("Yen") + " Yen");
         System.out.println("One dollar = " + environment.getProperty("EGP") + " EGP");
         System.out.println(environment.getProperty("name", "Anon"));
+        System.out.println("Most famous-special-extraordinary landmark from France is " + environment.getProperty("france"));
     }
 
 }

@@ -8,6 +8,9 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
 
+import java.util.List;
+import java.util.Random;
+
 
 @SpringBootApplication
 @PropertySources({
@@ -30,6 +33,11 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
         System.out.println("One dollar = " + environment.getProperty("EGP") + " EGP");
         System.out.println(environment.getProperty("name", "Anon"));
         System.out.println("Most famous-special-extraordinary landmark from France is " + environment.getProperty("france"));
+
+        List<String> landmarks = List.of(environment.getProperty(egypt).split(","));
+        Random random = new Random();
+
+        System.out.println("Another famous landmark from Egypt is " + landmarks.get(random.nextInt(landmarks.size())));
     }
 
 }

@@ -34,7 +34,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
         System.out.println(environment.getProperty("name", "Anon"));
         System.out.println("Most famous-special-extraordinary landmark from France is " + environment.getProperty("france"));
 
-        List<String> landmarks = List.of(environment.getProperty(egypt).split(","));
+        List<String> landmarks = List.of(environment.getProperty("egypt").split(","));
         Random random = new Random();
 
         System.out.println("Another famous landmark from Egypt is " + landmarks.get(random.nextInt(landmarks.size())));

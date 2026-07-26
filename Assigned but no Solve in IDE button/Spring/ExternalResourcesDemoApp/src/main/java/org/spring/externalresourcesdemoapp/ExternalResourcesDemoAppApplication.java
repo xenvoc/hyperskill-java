@@ -1,6 +1,7 @@
 package org.spring.externalresourcesdemoapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,6 +24,9 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
     @Autowired
     private Environment environment;
 
+    @Value("france")
+    private String landmark;
+
     public static void main(String[] args) {
         SpringApplication.run(ExternalResourcesDemoAppApplication.class, args);
     }
@@ -38,6 +42,8 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
         Random random = new Random();
 
         System.out.println("Another famous landmark from Egypt is " + landmarks.get(random.nextInt(landmarks.size())));
+
+        System.out.println(landmark);
     }
 
 }

@@ -24,7 +24,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
     @Autowired
     private Environment environment;
 
-    @Value("france")
+    @Value("${france}")
     private String landmark;
 
     public static void main(String[] args) {

@@ -27,6 +27,9 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
     @Value("${france}")
     private String landmark;
 
+    @Value("${macedonia:Monastery of Saint Naum}")
+    private String landmark2;
+
     public static void main(String[] args) {
         SpringApplication.run(ExternalResourcesDemoAppApplication.class, args);
     }
@@ -44,6 +47,7 @@ public class ExternalResourcesDemoAppApplication implements CommandLineRunner {
         System.out.println("Another famous landmark from Egypt is " + landmarks.get(random.nextInt(landmarks.size())));
 
         System.out.println(landmark);
+        System.out.println(landmark2);
     }
 
 }

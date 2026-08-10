@@ -1,8 +1,6 @@
 package org.spring.postndelrest.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -14,6 +12,11 @@ public class AddressController {
     @PostMapping("/addr")
     public void postAddress(@RequestParam String name, @RequestParam String addr) {
         addrBook.put(name, addr);
+    }
+
+    @GetMapping("addr/{name}")
+    public String GetAddress(@PathVariable String name) {
+        return addrBook.get(name);
     }
 
 }

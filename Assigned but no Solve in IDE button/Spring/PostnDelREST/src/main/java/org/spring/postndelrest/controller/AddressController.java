@@ -19,4 +19,10 @@ public class AddressController {
         return addrBook.get(name);
     }
 
+    @DeleteMapping("/addr")
+    public String removeAddress(@RequestParam String name) {
+        addrBook.remove(name);
+        return name + " removed from addr book!";
+    }
+
 }

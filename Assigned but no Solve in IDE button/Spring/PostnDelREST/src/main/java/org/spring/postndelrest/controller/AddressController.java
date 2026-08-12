@@ -19,6 +19,11 @@ public class AddressController {
         return addrBook.get(name);
     }
 
+    @GetMapping("/addr")
+    public ConcurrentMap<String, String> getAddrBook() {
+        return addrBook;
+    }
+
     @DeleteMapping("/addr")
     public String removeAddress(@RequestParam String name) {
         addrBook.remove(name);

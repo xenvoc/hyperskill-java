@@ -7,4 +7,12 @@ public class UserInfo {
     private boolean enable;
 
     UserInfo() {}
+
+    public boolean isEnabled() {
+        return enable;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

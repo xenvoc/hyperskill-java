@@ -1,7 +1,8 @@
 package org.spring.servingfiles.controller;
 
 import jakarta.annotation.Resource;
-import org.springframework.core.io.PathResource;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,7 @@ public class FileController {
     @GetMapping(path="/download")
     public ResponseEntity<Resource> download() {
         Path path = Path.of("files", "example.txt");
-        Resource file = new PathResource(path);
+        Resource file = new FileSystemResource(path);
         return ResponseEntity
                 .ok()
                 .contentType(MediaType.TEXT_PLAIN)

@@ -1,6 +1,5 @@
 package org.spring.servingfiles.controller;
 
-import jakarta.annotation.Resource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;

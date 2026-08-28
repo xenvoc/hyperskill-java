@@ -31,7 +31,7 @@ public class FileController {
     public ResponseEntity<StreamingResponseBody> stream() {
         Path path = Path.of("data", "bigdata.zip");
 
-        Resource resource = new PathResource(path);
+        Resource resource = new FileSystemResource(path);
 
         StreamingResponseBody responseBody = outputStream -> {
             try (InputStream inputStream = resource.getInputStream())  {

@@ -7,7 +7,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
 import java.io.IOException;
@@ -58,6 +61,18 @@ public class FileController {
                 .ok()
                 .headers(headers)
                 .body(responseBody);
+    }
+
+    @PostMapping("/upload")
+    public String upload(@RequestParam String sender, @RequestParam MultipartFile file) {
+        Path path = Path.of("uploads", file.getOriginalFilename());
+        try {
+            file.transferTo(path);
+        } catch (IOException e) {
+            // handle
+            return e.getClass().getSimpleName() + ": Error uploading the file " + e.getMessage();
+        }
+        return file.getOriginalFilename() + " successfully uploaded by " + sender;
     }
 
 }

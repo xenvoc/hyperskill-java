@@ -15,7 +15,9 @@ import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBo
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.UUID;
 
 @RestController
 public class FileController {
@@ -73,6 +75,17 @@ public class FileController {
             return e.getClass().getSimpleName() + ": Error uploading the file " + e.getMessage();
         }
         return file.getOriginalFilename() + " successfully uploaded by " + sender;
+    }
+
+    @PostMapping("/upload/raw")
+    public String upload(@RequestParam byte[] bytes) {
+        Path path = Path.of("uploads", UUID.randomUUID().toString());
+        try {
+            Files.write(path, bytes);
+        } catch (IOException e) {
+            return "Error uploading";
+        }
+        return "File successfully uploaded";
     }
 
 }

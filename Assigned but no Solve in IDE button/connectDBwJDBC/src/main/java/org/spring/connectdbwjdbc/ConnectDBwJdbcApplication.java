@@ -10,8 +10,10 @@ public class ConnectDBwJdbcApplication {
         SpringApplication.run(ConnectDBwJdbcApplication.class, args);
         String url = "jdbc:sqlite:path-to-database";
 
+        SQLiteDataSource dataSource = new SQLiteDataSource();
+        dataSource.setUrl(url);
 
-
+        
 
     }
 

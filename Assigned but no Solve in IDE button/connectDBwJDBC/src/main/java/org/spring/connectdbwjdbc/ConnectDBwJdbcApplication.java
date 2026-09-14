@@ -9,7 +9,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 public class ConnectDBwJdbcApplication {
 
-    public static void main(String[] args) {
+    public static <SQLiteDataSource> void main(String[] args) {
         SpringApplication.run(ConnectDBwJdbcApplication.class, args);
         String url = "jdbc:sqlite:path-to-database";
 

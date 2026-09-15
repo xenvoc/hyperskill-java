@@ -8,6 +8,7 @@ public class BeanVsComponentPasswGenApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BeanVsComponentPasswGenApplication.class, args);
+        int a = 5;
     }
 
 }

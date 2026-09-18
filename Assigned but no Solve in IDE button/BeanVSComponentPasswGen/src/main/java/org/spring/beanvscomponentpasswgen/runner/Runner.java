@@ -16,5 +16,6 @@ public class Runner implements CommandLineRunner {
     public void run(String... args) {
         System.out.println("A short password: " + generator.generate(5));
         System.out.println("A long password: " + generator.generate(10));
+        System.out.println("Generation complete");
     }
 }

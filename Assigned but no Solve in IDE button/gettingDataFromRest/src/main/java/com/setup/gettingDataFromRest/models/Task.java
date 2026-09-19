@@ -15,6 +15,7 @@ public class Task {
         this.completed = completed;
     }
 
+    // getters and setters
     public int getId () { return id; }
     public String getName() { return name; }
     public String getDescription() { return description; }

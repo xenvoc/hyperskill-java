@@ -31,6 +31,10 @@ public class Main {
                 "(1, 'Targ of KL', 'FireBloo')" +
                 "(2, 'Stark of Winterfell', 'Summer is Coming')," +
                 "(3, 'Lannister of Casterly Rock', 'Hear Me Roar!')");
+        
+        int u = statement.executeUpdate("UPDATE HOUSES " +
+                "SET words = 'Winter is coming' " +
+                "WHERE id = 2");
         }
     }
 }

@@ -19,6 +19,14 @@ public class Main {
                         "id INTEGER PRIMARY KEY," +
                         "name TEXT NOT NULL," +
                         " words TEXT NOT NULL)");
+                int i = statement.executeUpdate("(INSERT INTO HOUSES VALUES " +
+                        "(1, 'Targ of KL', 'FireBloo')" +
+                        "(2, 'Stark of Winterfell', 'Summer is Coming')," +
+                        "(3, 'Lannister of Casterly Rock', 'Hear Me Roar!')");
+
+                int u = statement.executeUpdate("UPDATE HOUSES " +
+                        "SET words = 'Winter is coming' " +
+                        "WHERE id = 2");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -27,14 +35,6 @@ public class Main {
 
 
             }
-        int i = statement.executeUpdate("(INSERT INTO HOUSES VALUES " +
-                "(1, 'Targ of KL', 'FireBloo')" +
-                "(2, 'Stark of Winterfell', 'Summer is Coming')," +
-                "(3, 'Lannister of Casterly Rock', 'Hear Me Roar!')");
-        
-        int u = statement.executeUpdate("UPDATE HOUSES " +
-                "SET words = 'Winter is coming' " +
-                "WHERE id = 2");
         }
     }
 }

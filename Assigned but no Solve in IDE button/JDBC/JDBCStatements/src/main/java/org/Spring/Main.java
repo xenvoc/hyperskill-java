@@ -20,7 +20,7 @@ public class Main {
                         "name TEXT NOT NULL," +
                         " words TEXT NOT NULL)");
                 int i = statement.executeUpdate("INSERT INTO HOUSES VALUES " +
-                        "(1, 'Targ of KL', 'FireBloo')" +
+                        "(1, 'Targ of KL', 'FireBloo')," +
                         "(2, 'Stark of Winterfell', 'Summer is Coming')," +
                         "(3, 'Lannister of Casterly Rock', 'Hear Me Roar!')");
 

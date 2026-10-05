@@ -18,7 +18,7 @@ public class Main {
                 statement.executeUpdate("CREATE TABLE IF NOT EXISTS HOUSES(" +
                         "id INTEGER PRIMARY KEY," +
                         "name TEXT NOT NULL," +
-                        " words TEXT NOT NULL)");
+                        "words TEXT NOT NULL)");
                 int i = statement.executeUpdate("INSERT INTO HOUSES VALUES " +
                         "(1, 'Targ of KL', 'FireBloo')," +
                         "(2, 'Stark of Winterfell', 'Summer is Coming')," +

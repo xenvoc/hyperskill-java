@@ -12,5 +12,9 @@ public class Main {
                             songs_number INTEGER
                     );
         """;
+
+        try (Statement statement = con.createStatement()) {
+            statement.executeUpdate(sql);
+        }
     }
 }

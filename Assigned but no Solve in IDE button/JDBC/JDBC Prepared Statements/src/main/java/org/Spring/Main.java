@@ -1,6 +1,10 @@
 package org.Spring;
 
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
 public class Main {
     public static void main(String[] args) {
         String sql = """
@@ -13,7 +17,9 @@ public class Main {
                     );
         """;
 
-        try (Statement statement = con.createStatement()) {
+        String url = "jdbc:postgresql://localhost:5253/my_db";
+
+        try (Connection con = DriverManager.getConnection(url, "username", "password"); Statement statement = con.createStatement()) {
             statement.executeUpdate(sql);
         }
     }

@@ -3,6 +3,7 @@ package org.Spring;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Main {
@@ -21,6 +22,8 @@ public class Main {
 
         try (Connection con = DriverManager.getConnection(url, "username", "password"); Statement statement = con.createStatement()) {
             statement.executeUpdate(sql);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         String sql = """
                     CREATE TABLE music.artists
                     (
@@ -24,6 +24,12 @@ public class Main {
             statement.executeUpdate(sql);
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
+        Connection con = DriverManager.getConnection(url, "user", "password");
+
+        try (Statement statement = con.createStatement()) {
+            statement.executeUpdate("INSERT INTO artists (name, origin, songs_number) VALUES " +
+                    "('The Beatlers', 'Liv-pool, Englandia', 123)");
         }
     }
 }

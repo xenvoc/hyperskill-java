@@ -31,5 +31,15 @@ public class Main {
             statement.executeUpdate("INSERT INTO artists (name, origin, songs_number) VALUES " +
                     "('The Beatlers', 'Liv-pool, Englandia', 123)");
         }
+
+        String insert = "INSERT INTRO artists (name, origin, songs_number) VALUES (?, ?, ?)";
+
+        try (PreparedStatement preparedStatement = con.preparedStatement(insert)) {
+            preparedStatement.setString(1, "The Beatloviches");
+            preparedStatement.setString(2, "Livpoolie, Englond");
+            preparedStatement.setString(3, 213);
+
+            preparedStatement.executeUpdate();
+        }
     }
 }

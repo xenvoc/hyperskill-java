@@ -1,10 +1,7 @@
 package org.Spring;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -34,7 +31,7 @@ public class Main {
 
         String insert = "INSERT INTRO artists (name, origin, songs_number) VALUES (?, ?, ?)";
 
-        try (PreparedStatement preparedStatement = con.preparedStatement(insert)) {
+        try (PreparedStatement preparedStatement = con.prepareStatement(insert)) {
             preparedStatement.setString(1, "The Beatloviches");
             preparedStatement.setString(2, "Livpoolie, Englond");
             preparedStatement.setString(3, 213);

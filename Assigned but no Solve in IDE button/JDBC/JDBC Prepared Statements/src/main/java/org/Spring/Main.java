@@ -34,7 +34,7 @@ public class Main {
         try (PreparedStatement preparedStatement = con.prepareStatement(insert)) {
             preparedStatement.setString(1, "The Beatloviches");
             preparedStatement.setString(2, "Livpoolie, Englond");
-            preparedStatement.setString(3, 213);
+            preparedStatement.setInt(3, 213);
 
             preparedStatement.executeUpdate();
         }

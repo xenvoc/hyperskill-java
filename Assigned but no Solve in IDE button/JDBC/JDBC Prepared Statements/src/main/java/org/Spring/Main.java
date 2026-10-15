@@ -38,5 +38,7 @@ public class Main {
 
             preparedStatement.executeUpdate();
         }
+
+        String updateOrigin = "UPDATE artists SET origin = ? WHERE id = ?";
     }
 }

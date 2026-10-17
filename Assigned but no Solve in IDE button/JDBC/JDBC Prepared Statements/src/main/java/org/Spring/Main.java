@@ -41,7 +41,7 @@ public class Main {
 
         String updateOrigin = "UPDATE artists SET origin = ? WHERE id = ?";
 
-        try (PreparedStatement praparedStatement = con.preparedStatement(updateOrigin)) {
+        try (PreparedStatement preparedStatement = con.preparedStatement(updateOrigin)) {
             preparedStatement.setObject(1, new StringBuilder("Mdonner"));
             preparedStatement.setObject(2, new Long(83));
 

@@ -47,5 +47,9 @@ public class Main {
 
             preparedStatement.executeUpdate();
         }
+
+        String insert2 = "INSERT INTO artists (name, songs_number) VALUES (?, ?)";
+
+
     }
 }

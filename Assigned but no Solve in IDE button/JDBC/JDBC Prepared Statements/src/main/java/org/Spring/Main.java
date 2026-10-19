@@ -50,6 +50,13 @@ public class Main {
 
         String insert2 = "INSERT INTO artists (name, songs_number) VALUES (?, ?)";
 
+       try (PreparedStatement preparedStatement = con.preparedStatement(insert)) {
+           preparedStatement.setObject(1, new StringBuilder("Madonner"));
+           preparedStatement.setObject(2, new Long(88));
+
+           preparedStatement.executeUpdate();
+       }
+
 
     }
 }

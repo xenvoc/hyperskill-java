@@ -41,7 +41,7 @@ public class Main {
 
         String updateOrigin = "UPDATE artists SET origin = ? WHERE id = ?";
 
-        try (PreparedStatement preparedStatement = con.preparedStatement(updateOrigin)) {
+        try (PreparedStatement preparedStatement = con.prepareStatement(updateOrigin)) {
             preparedStatement.setObject(1, new StringBuilder("Mdonner"));
             preparedStatement.setObject(2, new Long(83));
 
@@ -50,7 +50,7 @@ public class Main {
 
         String insert2 = "INSERT INTO artists (name, songs_number) VALUES (?, ?)";
 
-       try (PreparedStatement preparedStatement = con.preparedStatement(insert)) {
+       try (PreparedStatement preparedStatement = con.prepareStatement(insert)) {
            preparedStatement.setObject(1, new StringBuilder("Madonner"));
            preparedStatement.setObject(2, new Long(88));
 

@@ -29,7 +29,7 @@ public class Main {
                     "('The Beatlers', 'Liv-pool, Englandia', 123)");
         }
 
-        String insert = "INSERT INTRO artists (name, origin, songs_number) VALUES (?, ?, ?)";
+        String insert = "INSERT INTO artists (name, origin, songs_number) VALUES (?, ?, ?)";
 
         try (PreparedStatement preparedStatement = con.prepareStatement(insert)) {
             preparedStatement.setString(1, "The Beatloviches");

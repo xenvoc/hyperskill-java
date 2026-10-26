@@ -47,7 +47,7 @@ public class Main {
 
             try (PreparedStatement preparedStatement = con.prepareStatement(updateOrigin)) {
                 preparedStatement.setString(1, "Mdonner");
-                preparedStatement.setObject(2, Long.valueOf(83));
+                preparedStatement.setInt(2, 83);
 
                 preparedStatement.executeUpdate();
             }
@@ -56,7 +56,7 @@ public class Main {
 
             try (PreparedStatement preparedStatement = con.prepareStatement(insert2)) {
                 preparedStatement.setString(1, "Madonner");
-                preparedStatement.setObject(2, Long.valueOf(88));
+                preparedStatement.setInt(2, 88);
 
                 preparedStatement.executeUpdate();
             }

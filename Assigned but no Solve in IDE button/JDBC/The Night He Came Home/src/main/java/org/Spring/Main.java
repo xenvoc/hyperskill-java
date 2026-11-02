@@ -9,11 +9,16 @@ public class Main {
         Scanner scan = new Scanner(new File("src/main/resources/hyperskill-dataset-125823488.txt"));
         int timestamp = -1;
         int house_number = -1;
+
         while (scan.hasNextInt()) {
             int unverifiedTimestamp = scan.nextInt();
             int unverifiedHouse = scan.nextInt();
-            System.out.print(unverifiedTimestamp + " ");
-            System.out.println(unverifiedHouse);
+            int timeDiff = unverifiedTimestamp - timestamp;
+            int houseDiff = abs(unverifiedHouse - house_number);
+            if (timeDiff >= houseDiff) {
+               timestamp = unverifiedTimestamp;
+               house_number = unverifiedHouse;
+            }
         }
 
 

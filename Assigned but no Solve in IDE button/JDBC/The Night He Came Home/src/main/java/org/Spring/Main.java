@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scan = new Scanner(new File("src/main/resources/hyperskill-dataset-125823488.txt"));

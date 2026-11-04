@@ -11,6 +11,7 @@ public class Main {
         Scanner scan = new Scanner(new File("src/main/resources/hyperskill-dataset-125823488.txt"));
         int timestamp = -1;
         int house_number = -1;
+        long fakeReportCount = 0;
 
         while (scan.hasNextInt()) {
             int unverifiedTimestamp = scan.nextInt();
@@ -20,7 +21,7 @@ public class Main {
             if (timeDiff >= houseDiff) {
                timestamp = unverifiedTimestamp;
                house_number = unverifiedHouse;
-            }
+            } else fakeReportCount++;
         }
 
 

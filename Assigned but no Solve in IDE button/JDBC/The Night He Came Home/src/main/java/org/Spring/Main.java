@@ -9,8 +9,8 @@ import static java.lang.Math.abs;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scan = new Scanner(new File("src/main/resources/testSource.txt"));
-        int timestamp = -1;
-        int house_number = -1;
+        int timestamp = scan.nextInt();
+        int house_number = scan.nextInt();
         long fakeReportCount = 0;
 
         while (scan.hasNextInt()) {

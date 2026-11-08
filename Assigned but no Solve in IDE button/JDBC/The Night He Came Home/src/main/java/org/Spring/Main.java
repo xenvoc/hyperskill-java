@@ -8,7 +8,7 @@ import static java.lang.Math.abs;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scan = new Scanner(new File("src/main/resources/testSource.txt"));
+        Scanner scan = new Scanner(new File("src/main/resources/hyperskill-dataset-125823488.txt"));
         int timestamp = scan.nextInt();
         int house_number = scan.nextInt();
         long fakeReportCount = 0;
@@ -28,3 +28,6 @@ public class Main {
 
     }
 }
+
+
+// 571

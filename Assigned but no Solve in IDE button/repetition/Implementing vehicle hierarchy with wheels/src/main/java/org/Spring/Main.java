@@ -19,6 +19,11 @@ class Bycicle extends Vehicle {
 }
 
 // TODO: Create the Motorcycle class that extends Vehicle
+class Motorcycle extends Vehicle {
+    public Motorcycle() {
+        super(2);
+    }
+}
 
 // TODO: Create the Car class that extends Vehicle
 

@@ -26,6 +26,11 @@ class Motorcycle extends Vehicle {
 }
 
 // TODO: Create the Car class that extends Vehicle
+class Car extends Vehicle {
+    public Car() {
+        super(4);
+    }
+}
 
 public class Main {
     public static void main(String[] args) {

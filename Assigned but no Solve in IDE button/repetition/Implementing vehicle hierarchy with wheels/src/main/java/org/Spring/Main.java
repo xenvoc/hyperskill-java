@@ -37,7 +37,24 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String vehicleType = scanner.nextLine();
 
+
+
         // TODO: Create an instance of the appropriate vehicle class based on vehicleType
+        Vehicle Vehicle = null;
+        switch (vehicleType.toLowerCase()) {
+            case "bycicle":
+               Vehicle = new Bycicle();
+                break;
+            case "motorcycle":
+                Vehicle = new Motorcycle();
+                break;
+            case "car":
+                Vehicle = new Car();
+                break;
+            default:
+                System.out.println("Please give a valid vehicle type next time");
+                return;
+        }
         // TODO: Call the printWheels() method on the vehicle instance
     }
 }

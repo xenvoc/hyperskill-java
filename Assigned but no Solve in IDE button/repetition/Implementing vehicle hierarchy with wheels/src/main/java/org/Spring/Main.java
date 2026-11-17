@@ -8,6 +8,10 @@ class Vehicle {
     public Vehicle(int wheels) {
         numWheels = wheels;
     }
+
+    public void printWheels() {
+        System.out.println(numWheels);
+    }
 }
 
 // TODO: Create the Bicycle class that extends Vehicle

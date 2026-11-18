@@ -60,5 +60,6 @@ public class Main {
                 return;
         }
         // TODO: Call the printWheels() method on the vehicle instance
+        Vehicle.printWheels();
     }
 }

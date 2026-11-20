@@ -1,4 +1,3 @@
-package org.Spring;
 import java.util.Scanner;
 
 // Base class for vehicles

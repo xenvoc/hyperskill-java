@@ -38,7 +38,7 @@ class Car extends Vehicle {
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Gimme a vehicle name:");
+        //System.out.println("Gimme a vehicle name:");
         String vehicleType = scanner.nextLine();
 
 

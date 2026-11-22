@@ -3,14 +3,17 @@ import java.util.Scanner;
 // Base class for vehicles
 class Vehicle {
     protected int numWheels;
+    protected String name;
 
-    public Vehicle(int wheels) {
+    public Vehicle(String name, int wheels) {
+        this.name = name;
         numWheels = wheels;
     }
 
     public void printWheels() {
         System.out.println(numWheels);
     }
+
 }
 
 // TODO: Create the Bicycle class that extends Vehicle

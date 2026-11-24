@@ -11,7 +11,7 @@ class Vehicle {
     }
 
     public void printWheels() {
-        System.out.println(numWheels);
+        System.out.println("A " + name + " has " + numWheels + " wheels.");
     }
 
 }

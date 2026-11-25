@@ -17,9 +17,9 @@ class Vehicle {
 }
 
 // TODO: Create the Bicycle class that extends Vehicle
-class Bycicle extends Vehicle {
-    public Bycicle() {
-        super("bycicle", 2);
+class Bicycle extends Vehicle {
+    public Bicycle() {
+        super("bicycle", 2);
     }
 
 }
@@ -49,8 +49,8 @@ public class Main {
         // TODO: Create an instance of the appropriate vehicle class based on vehicleType
         Vehicle Vehicle = null;
         switch (vehicleType.toLowerCase()) {
-            case "bycicle":
-               Vehicle = new Bycicle();
+            case "bicycle":
+               Vehicle = new Bicycle();
                 break;
             case "motorcycle":
                 Vehicle = new Motorcycle();

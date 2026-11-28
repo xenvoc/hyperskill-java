@@ -1,4 +1,3 @@
-package org.Spring;
 import Java.util.scanner;
 
 public class Main {
